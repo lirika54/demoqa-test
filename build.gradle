@@ -6,23 +6,12 @@ repositories {
     mavenCentral()
 }
 
-task.withType(JavaCompile) {
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
 dependencies {
-    testImplementation()
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.8.2"
+    )
 }
-//help{
-  //  doFirst{
-    //    println ""
-      //  println "**************************************************************************"
-        //println "***                                                                    ***"
-        //println "*** Welcome to https://github.com/lirika54/demoqa-test                 ***"
-        //println "***                                                                    ***"
-        //println "*** ./gradlew help                                                     ***"
-        //println "***                                                                    ***"
-        //println "**************************************************************************"
-        //println ""
-    //}
-//}
